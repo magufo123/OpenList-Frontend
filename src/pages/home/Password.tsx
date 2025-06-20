@@ -10,6 +10,7 @@ import {
 } from "@hope-ui/solid"
 import { useRouter, useT } from "~/hooks"
 import { JSXElement } from "solid-js"
+import { Link } from "@solidjs/router"
 
 type PasswordProps = {
   title: string
@@ -51,7 +52,9 @@ const Password = (props: PasswordProps) => {
           direction={{ "@initial": "column", "@sm": "row" }}
           columnGap="$1"
         >
-          {props.children}
+          <Text color="$info9" as={Link} href={`https://long2025.top/my`}>
+            获取授权(请联系主页Q)!
+          </Text>
         </Flex>
         <HStack spacing="$2">
           <Button colorScheme="neutral" onClick={back}>

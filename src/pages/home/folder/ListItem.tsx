@@ -1,5 +1,5 @@
 import { HStack, Icon, Text } from "@hope-ui/solid"
-import { Motion } from "solid-motionone"
+import { Motion } from "@motionone/solid"
 import { useContextMenu } from "solid-contextmenu"
 import { batch, Show } from "solid-js"
 import { LinkWithPush } from "~/components"
@@ -23,9 +23,9 @@ export interface Col {
 }
 
 export const cols: Col[] = [
-  { name: "name", textAlign: "left", w: { "@initial": "76%", "@md": "50%" } },
-  { name: "size", textAlign: "right", w: { "@initial": "24%", "@md": "17%" } },
-  { name: "modified", textAlign: "right", w: { "@initial": 0, "@md": "33%" } },
+  { name: "name", textAlign: "left", w: { "@initial": "75%", "@md": "50%" } },
+  { name: "size", textAlign: "right", w: { "@initial": "25%", "@md": "18%" } },
+  { name: "modified", textAlign: "right", w: { "@initial": 0, "@md": "32%" } },
 ]
 
 export const ListItem = (props: { obj: StoreObj; index: number }) => {

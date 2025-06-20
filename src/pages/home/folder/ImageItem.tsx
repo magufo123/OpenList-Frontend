@@ -1,5 +1,5 @@
 import { Center, VStack, Icon } from "@hope-ui/solid"
-import { Motion } from "solid-motionone"
+import { Motion } from "@motionone/solid"
 import { useContextMenu } from "solid-contextmenu"
 import { batch, Show } from "solid-js"
 import { CenterLoading, ImageWithError } from "~/components"

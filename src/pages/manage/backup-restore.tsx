@@ -167,10 +167,7 @@ const BackupRestore = () => {
         },
       )
     }
-    download(
-      "openlist_backup_" + new Date().toLocaleString() + ".json",
-      allData,
-    )
+    download("alist_backup_" + new Date().toLocaleString() + ".json", allData)
     appendLog(t("br.finish_backup"), "info")
   }
   const [addSettingsLoading, addSettings] = useFetch(

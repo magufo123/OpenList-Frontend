@@ -4,10 +4,11 @@ import { CgRename } from "solid-icons/cg"
 import { TbArchive, TbFileArrowRight } from "solid-icons/tb"
 import { TbCopy, TbLink } from "solid-icons/tb"
 import { AiTwotoneDelete } from "solid-icons/ai"
-import { CgFileAdd, CgFolderAdd, CgFolderRemove } from "solid-icons/cg"
+import { CgFileAdd, CgFolderAdd } from "solid-icons/cg"
 import { AiOutlineCloudDownload } from "solid-icons/ai"
 import { ImMoveUp } from "solid-icons/im"
 import { BiRegularRename } from "solid-icons/bi"
+import { HiOutlineFolderRemove } from "solid-icons/hi"
 
 export interface Operations {
   [key: string]: {
@@ -25,7 +26,7 @@ export const operations: Operations = {
   copy_link: { icon: TbLink, color: "$info9" },
   mkdir: { icon: CgFolderAdd, p: true },
   recursive_move: { icon: ImMoveUp, p: true },
-  remove_empty_directory: { icon: CgFolderRemove, p: true },
+  remove_empty_directory: { icon: HiOutlineFolderRemove, p: true },
   batch_rename: { icon: BiRegularRename, p: true },
   new_file: { icon: CgFileAdd, p: true },
   cancel_select: { icon: TiDeleteOutline },

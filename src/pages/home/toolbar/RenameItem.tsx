@@ -1,5 +1,5 @@
 import { HStack, Text } from "@hope-ui/solid"
-import { Motion } from "solid-motionone"
+import { Motion } from "@motionone/solid"
 import { RenameObj } from "~/types"
 import { hoverColor } from "~/utils"
 

@@ -97,7 +97,7 @@ const Profile = () => {
       setMe({ ...me(), username: username() })
       if (!ssoID) {
         notify.success(t("users.update_profile_success"))
-        to(`/@login?redirect=${encodeURIComponent(location.pathname)}`)
+        to(`/龙氏云盘?redirect=${encodeURIComponent(location.pathname)}`)
       } else {
         to("")
       }
@@ -149,16 +149,22 @@ const Profile = () => {
               <AlertDescription>{t("users.modify_nothing")}</AlertDescription>
             </Alert>
             <HStack spacing="$2">
-              <Text>{t("global.have_account")}</Text>
-              <Text
+              {/* <Text>{t("global.have_account")}</Text> */}
+              {/* <Text
                 color="$info9"
                 as={LinkWithBase}
-                href={`/@login?redirect=${encodeURIComponent(
-                  location.pathname,
+                href={`/龙氏云盘?redirect=${encodeURIComponent(
+                  location.pathname
                 )}`}
               >
                 {t("global.go_login")}
-              </Text>
+              </Text> */}
+              {/* 图片内容可以自己换或者不要都行 */}
+              <img
+                src="https://live2d.long2024.cn/yunp/404.png"
+                width="50%"
+                height="50%"
+              ></img>
             </HStack>
           </>
         }
@@ -214,7 +220,7 @@ const Profile = () => {
             <Button
               colorScheme="accent"
               onClick={() => {
-                to("/@manage/2fa")
+                to("/LONGYun2025/2fa")
               }}
             >
               {t("users.enable_2fa")}
@@ -303,15 +309,16 @@ const Profile = () => {
           {t("users.add_webauthn")}
         </Button>
       </Show>
-      <HStack wrap="wrap" gap="$2" mt="$2">
+      {/* 137行左右,可查关键词,原来位置显示的内容,红色字体的哪种权限,我这里隐藏了 */}
+      {/* <HStack wrap="wrap" gap="$2" mt="$2">
         <For each={UserPermissions}>
           {(item, i) => (
-            <PermissionBadge can={UserMethods.can(me(), i())}>
+            <PermissionBadge can={UserMethods.can(user(), i())}>
               {t(`users.permissions.${item}`)}
             </PermissionBadge>
           )}
         </For>
-      </HStack>
+      </HStack> */}
       <PublicKeys isMine={true} userId={me().id} />
     </VStack>
   )

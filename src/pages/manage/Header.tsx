@@ -34,7 +34,7 @@ const Header = () => {
     handleResp(await logOutReq(), () => {
       changeToken()
       notify.success(t("manage.logout_success"))
-      to(`/@login?redirect=${encodeURIComponent(location.pathname)}`)
+      to(`/龙氏云盘?redirect=${encodeURIComponent(location.pathname)}`)
     })
   }
   return (
@@ -65,7 +65,7 @@ const Header = () => {
             color="$info9"
             cursor="pointer"
             onClick={() => {
-              to("/@manage")
+              to("/LONGYun2025")
             }}
           >
             {t("manage.title")}
@@ -75,8 +75,11 @@ const Header = () => {
           <IconButton
             aria-label="logout"
             icon={<IoExit />}
-            loading={logOutReqLoading()}
-            onClick={logOut}
+            onClick={() => {
+              changeToken()
+              notify.success(t("manage.logout_success"))
+              to(`/龙氏云盘?redirect=${encodeURIComponent(location.pathname)}`)
+            }}
             size="sm"
           />
         </HStack>
@@ -88,12 +91,6 @@ const Header = () => {
           <DrawerHeader color="$info9">{t("manage.title")}</DrawerHeader>
           <DrawerBody>
             <SideMenu items={side_menu_items} />
-            <Center>
-              <HStack spacing="$4" p="$2" color="$neutral11">
-                <SwitchLanguageWhite />
-                <SwitchColorMode />
-              </HStack>
-            </Center>
           </DrawerBody>
         </DrawerContent>
       </Drawer>
