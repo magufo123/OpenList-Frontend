@@ -149,6 +149,16 @@
     "root_folder_path": "根文件夹路径",
     "url": "链接"
   },
+  "AList V3": {
+    "forward_archive_requests": "转发解压请求",
+    "meta_password": "元信息密码",
+    "pass_ua_to_upsteam": "传递UA至上游",
+    "password": "密码",
+    "root_folder_path": "根文件夹路径",
+    "token": "令牌",
+    "url": "链接",
+    "username": "用户名"
+  },
   "Alias": {
     "download_concurrency": "下载并发",
     "download_concurrency-tips": "需要启用代理",
@@ -395,8 +405,8 @@
     "cookie": "Cookie",
     "download_api": "下载接口",
     "download_apis": {
-      "get_download_info": "获取下载信息",
-      "get_file_url": "获取文件链接"
+      "get_download_info": "Get download info",
+      "get_file_url": "Get file url"
     },
     "root_folder_id": "根文件夹ID",
     "upload_thread": "上传线程"
@@ -417,7 +427,7 @@
   },
   "FTP": {
     "address": "地址",
-    "encoding": "编码",
+    "encoding": "",
     "password": "密码",
     "root_folder_path": "根文件夹路径",
     "username": "用户名"
@@ -426,7 +436,7 @@
     "client_id": "客户端ID",
     "client_secret": "客户端密钥",
     "page_size": "分页大小",
-    "page_size-tips": "",
+    "page_size-tips": "list api per page size of FebBox driver",
     "root_folder_id": "根文件夹ID",
     "sort_rule": "排序规则",
     "sort_rules": {
@@ -472,7 +482,7 @@
   },
   "GitHub Releases": {
     "gh_proxy": "Gh 代理",
-    "gh_proxy-tips": "GitHub 代理，如：https://ghproxy.net/github.com 或 https://gh-proxy.com/github.com ",
+    "gh_proxy-tips": "GitHub proxy, e.g. https://ghproxy.net/github.com or https://gh-proxy.com/github.com ",
     "repo_structure": "仓库结构",
     "repo_structure-tips": "结构：[path：]org/repo",
     "root_folder_id": "根文件夹ID",
@@ -963,6 +973,8 @@
     "client_id": "客户端ID",
     "client_secret": "客户端密钥",
     "client_version": "客户端版本",
+    "credit_key": "信用密钥",
+    "credit_key-tips": "信用密钥，用于登录",
     "device_id": "设备id",
     "download_user_agent": "下载用户代理",
     "login_type": "登录类型",
@@ -1031,6 +1043,23 @@
     "url_structure": "Url 结构",
     "url_structure-tips": "结构:\nFolderName:\n  [FileName:][FileSize:][Modified:]Url",
     "writable": "可写"
+  },
+  "VTencent": {
+    "cookie": "Cookie",
+    "order_by": "排序",
+    "order_bys": {
+      "CreatTime": "创建时间",
+      "Name": "名称",
+      "Size": "大小",
+      "UpdateTime": "修改时间"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "Asc": "升序",
+      "Desc": "降序"
+    },
+    "root_folder_id": "根文件夹ID",
+    "tf_uid": "Tf uid"
   },
   "Virtual": {
     "max_file_size": "最大文件大小",
@@ -1116,9 +1145,10 @@
     },
     "189CloudPC": {},
     "AList V2": {},
+    "AList V3": {},
     "Alias": {},
     "Aliyundrive": {
-      "alert": "在这个驱动中可能有一个死循环的错误。\n已废弃，不再维护，并将在未来的版本中删除。\n我们建议使用官方支持的阿里云盘Open。"
+      "alert": "在这个驱动中可能有一个死循环的错误。\n已废弃，不再维护，并将在未来的版本中删除。\n我们建议使用官方驱动的 阿里云盘Open。"
     },
     "AliyundriveOpen": {},
     "AliyundriveShare": {},
@@ -1182,6 +1212,7 @@
     "UCTV": {},
     "USS": {},
     "UrlTree": {},
+    "VTencent": {},
     "Virtual": {},
     "WebDav": {},
     "WeiYun": {},
@@ -1199,9 +1230,10 @@
     "189Cloud": "天翼云盘",
     "189CloudPC": "天翼云盘客户端",
     "AList V2": "AList V2",
+    "AList V3": "AList V3",
     "Alias": "别名",
     "Aliyundrive": "阿里云盘",
-    "AliyundriveOpen": "阿里云盘 (Oauth2)",
+    "AliyundriveOpen": "阿里云盘Open",
     "AliyundriveShare": "阿里云盘分享",
     "Azure Blob Storage": "Azure Blob 存储",
     "BaiduNetdisk": "百度网盘",
@@ -1218,11 +1250,11 @@
     "FTP": "FTP",
     "FebBox": "FebBox",
     "FeijiPan": "飞机盘",
-    "GitHub API": "Github API",
+    "GitHub API": "GitHub API",
     "GitHub Releases": "GitHub 发行",
     "GoogleDrive": "谷歌云盘",
     "GooglePhoto": "谷歌相册",
-    "HalalCloud": "HhalCloud",
+    "HalalCloud": "HalalCloud",
     "ILanZou": "蓝奏云优享版",
     "IPFS API": "IPFS API",
     "KodBox": "可道云",
@@ -1235,7 +1267,7 @@
     "Misskey": "Misskey",
     "MoPan": "魔盘",
     "NeteaseMusic": "网易云音乐",
-    "Onedrive": "OneDrive",
+    "Onedrive": "Onedrive",
     "Onedrive Sharelink": "Onedrive 分享链接",
     "OnedriveAPP": "OnedriveAPP",
     "OpenList": "OpenList",
@@ -1261,6 +1293,7 @@
     "UCTV": "UC TV",
     "USS": "又拍云存储",
     "UrlTree": "地址树",
+    "VTencent": "腾讯智能创作平台",
     "Virtual": "虚拟存储",
     "WebDav": "WebDav",
     "WeiYun": "腾讯微云",
