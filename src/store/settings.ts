@@ -8,7 +8,7 @@ export const setSettings = (items: Record<string, string>) => {
   })
   const version = settings["version"] || "Unknown"
   console.log(
-    `%c Long • Cloud %c ${version} %c https://github.com/long2005a1/Long-Cloud`,
+    `%c Long • Cloud %c ${version} %c https://github.com/lyy2005a3/Long-Cloud`,
     "color: #fff; background: #5f5f5f",
     "color: #fff; background: #70c6be",
     "",
@@ -28,8 +28,8 @@ export const getSettingNumber = (key: string, defaultV?: number) => {
   return defaultV ?? 0
 }
 export const getMainColor = (): string => {
-  if (window.ALIST.main_color) {
-    return window.ALIST.main_color
+  if (window.OPENLIST_CONFIG.main_color) {
+    return window.OPENLIST_CONFIG.main_color
   }
   return getSetting("main_color") || "#1890ff"
 }
