@@ -1,30 +1,32 @@
 <!doctype html>
 <html lang="zh-CN" translate="no">
   <head>
-    <!-- customize head -->
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="robots" content="notranslate" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="referrer" content="same-origin" />
-    <meta name="application-name" content="龙氏云盘" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="google" content="notranslate" />
-    <link href="/static/manifest.json" rel="manifest" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="龙氏云盘" />
+    <meta name="application-name" content="龙氏云盘" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link
       rel="apple-touch-icon"
       sizes="512x512"
       href="images/apple-touch-icon.png"
     />
-    <script
-      src="https://g.alicdn.com/IMM/office-js/1.1.5/aliyun-web-office-sdk.min.js"
-      async
-    ></script>
-    <link
-      rel="shortcut icon"
-      type="image/ico"
-      href="images/applogo.png"
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="manifest" href="static/manifest.json" />
+    <meta
+      name="theme-color"
+      content="#FFFFFF"
+      media="(prefers-color-scheme: light)"
     />
+    <meta
+      name="theme-color"
+      content="#000000"
+      media="(prefers-color-scheme: dark)"
+    />
+    <!-- customize head -->
     <title>Loading...</title>
     <script>
       window.OPENLIST_CONFIG = {
@@ -37,10 +39,10 @@
       window.__dynamic_base__ = window.OPENLIST_CONFIG.cdn || ""
     </script>
   </head>
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-
     <script src="/src/main.tsx" type="module"></script>
     <canvas id="canvas-basic"></canvas>
     <!-- customize body -->
