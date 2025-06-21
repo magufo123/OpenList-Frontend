@@ -135,7 +135,7 @@ pnpm install
 
 log_step "==== Building i18n ===="
 if [ "$SKIP_I18N" == "false" ]; then
-    pnpm i18n:release
+    node ./scripts/i18n.mjs
 else
     log_warning "Skipping i18n build step"
 fi
