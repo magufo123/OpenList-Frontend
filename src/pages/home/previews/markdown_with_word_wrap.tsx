@@ -7,11 +7,15 @@ const MdPreview = () => {
   const [content] = useFetchText()
   return (
     <MaybeLoading loading={content.loading}>
-      <MarkdownAdd commentMore actions
+      <MarkdownAdd
+        commentMore
+        actions
         class="word-wrap"
         children={content()?.content}
         ext={ext(objStore.obj.name)}
-        tocAdd commentMore actions
+        tocAdd
+        commentMore
+        actions
       />
     </MaybeLoading>
   )
