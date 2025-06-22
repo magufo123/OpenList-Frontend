@@ -89,7 +89,7 @@ const App: Component = () => {
         fallback={
           <Routes base={base_path}>
             <Route path="/@test" component={Test} />
-            <Route path="/龙氏云盘" component={Login} />
+            <Route path="/LONGSHI" component={Login} />
             <Route
               path="/LONGYun2025/*"
               element={

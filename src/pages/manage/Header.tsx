@@ -34,7 +34,7 @@ const Header = () => {
     handleResp(await logOutReq(), () => {
       changeToken()
       notify.success(t("manage.logout_success"))
-      to(`/龙氏云盘?redirect=${encodeURIComponent(location.pathname)}`)
+      to(`/LONGSHI?redirect=${encodeURIComponent(location.pathname)}`)
     })
   }
   return (
@@ -78,7 +78,7 @@ const Header = () => {
             onClick={() => {
               changeToken()
               notify.success(t("manage.logout_success"))
-              to(`/龙氏云盘?redirect=${encodeURIComponent(location.pathname)}`)
+              to(`/LONGSHI?redirect=${encodeURIComponent(location.pathname)}`)
             }}
             size="sm"
           />

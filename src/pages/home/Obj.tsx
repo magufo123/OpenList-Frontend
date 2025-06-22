@@ -90,7 +90,7 @@ export const Obj = () => {
               <Text
                 color="$info9"
                 as={LinkWithBase}
-                href={`/龙氏云盘?redirect=${encodeURIComponent(
+                href={`/LONGSHI?redirect=${encodeURIComponent(
                   location.pathname,
                 )}`}
               >

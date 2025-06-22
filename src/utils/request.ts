@@ -32,7 +32,7 @@ instance.interceptors.response.use(
     //   notify.error(resp.message);
     //   bus.emit(
     //     "to",
-    //     `/龙氏云盘?redirect=${encodeURIComponent(window.location.pathname)}`
+    //     `/LONGSHI?redirect=${encodeURIComponent(window.location.pathname)}`
     //   );
     // }
     return resp

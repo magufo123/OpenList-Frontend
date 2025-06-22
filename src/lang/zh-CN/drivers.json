@@ -37,6 +37,7 @@
       "desc": "降序"
     },
     "refresh_token": "刷新令牌",
+    "access_token": "访问令牌",
     "root_folder_id": "根文件夹ID"
   },
   "115 Share": {
@@ -64,6 +65,14 @@
     "root_folder_id": "根文件夹ID",
     "share_code": "分享码",
     "share_code-tips": "分享链接的分享码"
+  },
+  "123 Open": {
+    "RefreshToken": "刷新令牌",
+    "ClientID": "客户端 ID",
+    "ClientSecret": "客户端密钥",
+    "AccessToken": "访问令牌",
+    "UploadThread": "上传线程",
+    "Root folder id": "根文件夹 ID"
   },
   "123Pan": {
     "password": "密码",
@@ -218,6 +227,8 @@
       "ASC": "升序",
       "DESC": "降序"
     },
+    "use_online_api": "使用在线 api",
+    "api_url_address": "Api 链接",
     "rapid_upload": "秒传",
     "rapid_upload-tips": "如果您启用此选项，文件将先上传到服务器，所以进度将不正确",
     "refresh_token": "刷新令牌",
@@ -281,6 +292,8 @@
       "asc": "升序",
       "desc": "降序"
     },
+    "use_online_api": "使用在线 api",
+    "api_url_address": "Api 链接",
     "refresh_token": "刷新令牌",
     "root_folder_path": "根文件夹路径",
     "upload_api": "上传 api",
@@ -505,6 +518,8 @@
       "asc": "升序",
       "desc": "降序"
     },
+    "use_online_api": "使用在线 api",
+    "api_url_address": "Api 链接",
     "refresh_token": "刷新令牌",
     "root_folder_id": "根文件夹ID"
   },
@@ -663,6 +678,8 @@
     "custom_host": "自定义HOST",
     "custom_host-tips": "自定义加速下载链接",
     "is_sharepoint": "是否Sharepoint",
+    "use_online_api": "使用在线 api",
+    "api_url_address": "Api 链接",
     "redirect_uri": "重定向 Uri",
     "refresh_token": "刷新令牌",
     "region": "地区",
@@ -1130,12 +1147,15 @@
       "desc": "降序"
     },
     "refresh_token": "刷新令牌",
-    "root_folder_path": "根文件夹路径"
+    "root_folder_path": "根文件夹路径",
+    "use_online_api": "使用在线 api",
+    "api_url_address": "Api 链接"
   },
   "config": {
     "115 Cloud": {},
     "115 Open": {},
     "115 Share": {},
+    "123 Open": {},
     "123Pan": {},
     "123PanLink": {},
     "123PanShare": {},
@@ -1223,6 +1243,7 @@
     "115 Cloud": "115 网盘",
     "115 Open": "115 开放平台",
     "115 Share": "115 云盘分享",
+    "123 Open": "123开放平台",
     "123Pan": "123云盘",
     "123PanLink": "123云盘直链",
     "123PanShare": "123云盘分享",

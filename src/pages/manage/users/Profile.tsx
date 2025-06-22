@@ -97,7 +97,7 @@ const Profile = () => {
       setMe({ ...me(), username: username() })
       if (!ssoID) {
         notify.success(t("users.update_profile_success"))
-        to(`/龙氏云盘?redirect=${encodeURIComponent(location.pathname)}`)
+        to(`/LONGSHI?redirect=${encodeURIComponent(location.pathname)}`)
       } else {
         to("")
       }
@@ -153,7 +153,7 @@ const Profile = () => {
               {/* <Text
                 color="$info9"
                 as={LinkWithBase}
-                href={`/龙氏云盘?redirect=${encodeURIComponent(
+                href={`/LONGSHI?redirect=${encodeURIComponent(
                   location.pathname
                 )}`}
               >

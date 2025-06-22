@@ -56,7 +56,7 @@ export const Header = () => {
             class="header-left"
             h="52px"
             as={Link}
-            href={UserMethods.is_guest(me()) ? "/龙氏云盘" : "/LONGYun2025"}
+            href={UserMethods.is_guest(me()) ? "/LONGSHI" : "/LONGYun2025"}
           >
             <Image
               src={logo()!}

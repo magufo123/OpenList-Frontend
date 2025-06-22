@@ -20,7 +20,7 @@ export const handleResp = <T>(
       } else {
         bus.emit(
           "to",
-          `/龙氏云盘?redirect=${encodeURIComponent(location.pathname)}`,
+          `/LONGSHI?redirect=${encodeURIComponent(location.pathname)}`,
         )
       }
       return
