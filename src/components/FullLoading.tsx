@@ -64,6 +64,7 @@ export const CenterLoading = <C extends ElementType = "div">(
 ) => {
   return (
     <Center w="$full" h="$full">
+      {/* 左上角logo加载颜色 */}
       <Spinner color="tomato" {...props} />
     </Center>
   )
