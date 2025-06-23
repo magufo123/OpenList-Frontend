@@ -22,8 +22,9 @@
     "root_folder_id": "根文件夹ID"
   },
   "115 Open": {
-    "limit_rate": "限制速率",
-    "limit_rate-tips": "限制所有 api 请求率 ([limit]r/1s)",
+    "access_token": "访问令牌",
+    "limit_rate,string": "限制速率",
+    "limit_rate,string-tips": "限制所有 api 请求率 ([limit]r/1s)",
     "order_by": "排序",
     "order_bys": {
       "file_name": "文件名称",
@@ -37,7 +38,6 @@
       "desc": "降序"
     },
     "refresh_token": "刷新令牌",
-    "access_token": "访问令牌",
     "root_folder_id": "根文件夹ID"
   },
   "115 Share": {
@@ -67,12 +67,13 @@
     "share_code-tips": "分享链接的分享码"
   },
   "123 Open": {
-    "RefreshToken": "刷新令牌",
-    "ClientID": "客户端 ID",
-    "ClientSecret": "客户端密钥",
     "AccessToken": "访问令牌",
+    "ClientID": "客户端ID",
+    "ClientSecret": "客户端密钥",
+    "RefreshToken": "刷新令牌",
     "UploadThread": "上传线程",
-    "Root folder id": "根文件夹 ID"
+    "UploadThread-tips": "上传使用的线程数",
+    "root_folder_id": "根文件夹ID"
   },
   "123Pan": {
     "password": "密码",
@@ -152,27 +153,12 @@
     "username": "用户名",
     "validate_code": "验证码"
   },
-  "AList V2": {
-    "access_token": "访问令牌",
-    "password": "密码",
-    "root_folder_path": "根文件夹路径",
-    "url": "链接"
-  },
-  "AList V3": {
-    "forward_archive_requests": "转发解压请求",
-    "meta_password": "元信息密码",
-    "pass_ua_to_upsteam": "传递UA至上游",
-    "password": "密码",
-    "root_folder_path": "根文件夹路径",
-    "token": "令牌",
-    "url": "链接",
-    "username": "用户名"
-  },
   "Alias": {
     "download_concurrency": "下载并发",
     "download_concurrency-tips": "需要启用代理",
     "download_part_size": "下载分片大小",
     "download_part_size-tips": "需要启用代理。单位：KB",
+    "parallel_write": "并行写入",
     "paths": "路径",
     "protect_same_name": "保护同名",
     "protect_same_name-tips": "保护同名的文件不被删除或重命名",
@@ -197,6 +183,7 @@
     "root_folder_id": "根文件夹ID"
   },
   "AliyundriveOpen": {
+    "api_url_address": "API 地址",
     "client_id": "客户端ID",
     "client_id-tips": "如果你没有，请留空",
     "client_secret": "客户端密钥",
@@ -214,7 +201,6 @@
       "jpeg": "Jpeg",
       "mov": "Mov"
     },
-    "oauth_token_url": "Oauth令牌链接",
     "order_by": "排序",
     "order_bys": {
       "created_at": "创建时间",
@@ -227,8 +213,6 @@
       "ASC": "升序",
       "DESC": "降序"
     },
-    "use_online_api": "使用在线 api",
-    "api_url_address": "Api 链接",
     "rapid_upload": "秒传",
     "rapid_upload-tips": "如果您启用此选项，文件将先上传到服务器，所以进度将不正确",
     "refresh_token": "刷新令牌",
@@ -237,7 +221,8 @@
       "delete": "删除",
       "trash": "回收站"
     },
-    "root_folder_id": "根文件夹ID"
+    "root_folder_id": "根文件夹ID",
+    "use_online_api": "使用在线 API"
   },
   "AliyundriveShare": {
     "order_by": "排序",
@@ -268,6 +253,7 @@
     "sign_url_expire-tips": "SAS URLs 的到期时间，以小时为单位。"
   },
   "BaiduNetdisk": {
+    "api_url_address": "API 地址",
     "client_id": "客户端ID",
     "client_secret": "客户端密钥",
     "custom_crack_ua": "自定义破解ua",
@@ -292,13 +278,12 @@
       "asc": "升序",
       "desc": "降序"
     },
-    "use_online_api": "使用在线 api",
-    "api_url_address": "Api 链接",
     "refresh_token": "刷新令牌",
     "root_folder_path": "根文件夹路径",
     "upload_api": "上传 api",
     "upload_thread": "上传线程",
-    "upload_thread-tips": "1<=线程<=32"
+    "upload_thread-tips": "1<=线程<=32",
+    "use_online_api": "使用在线 API"
   },
   "BaiduPhoto": {
     "album_id": "相簿ID",
@@ -418,8 +403,8 @@
     "cookie": "Cookie",
     "download_api": "下载接口",
     "download_apis": {
-      "get_download_info": "Get download info",
-      "get_file_url": "Get file url"
+      "get_download_info": "获取下载信息",
+      "get_file_url": "获取文件链接"
     },
     "root_folder_id": "根文件夹ID",
     "upload_thread": "上传线程"
@@ -430,17 +415,18 @@
     "share_ids": "分享ID"
   },
   "Dropbox": {
+    "api_url_address": "API 地址",
     "client_id": "客户端ID",
     "client_id-tips": "如果你没有，请留空",
     "client_secret": "客户端密钥",
     "client_secret-tips": "如果你没有，请留空",
-    "oauth_token_url": "Oauth令牌链接",
     "refresh_token": "刷新令牌",
-    "root_folder_path": "根文件夹路径"
+    "root_folder_path": "根文件夹路径",
+    "use_online_api": "使用在线 API"
   },
   "FTP": {
     "address": "地址",
-    "encoding": "",
+    "encoding": "编码",
     "password": "密码",
     "root_folder_path": "根文件夹路径",
     "username": "用户名"
@@ -449,7 +435,7 @@
     "client_id": "客户端ID",
     "client_secret": "客户端密钥",
     "page_size": "分页大小",
-    "page_size-tips": "list api per page size of FebBox driver",
+    "page_size-tips": "",
     "root_folder_id": "根文件夹ID",
     "sort_rule": "排序规则",
     "sort_rules": {
@@ -495,7 +481,7 @@
   },
   "GitHub Releases": {
     "gh_proxy": "Gh 代理",
-    "gh_proxy-tips": "GitHub proxy, e.g. https://ghproxy.net/github.com or https://gh-proxy.com/github.com ",
+    "gh_proxy-tips": "GitHub 代理，如：https://ghproxy.net/github.com 或 https://gh-proxy.com/github.com ",
     "repo_structure": "仓库结构",
     "repo_structure-tips": "结构：[path：]org/repo",
     "root_folder_id": "根文件夹ID",
@@ -507,6 +493,7 @@
     "token-tips": "GitHub 令牌，如果您想要访问私有仓库或提高费率限制"
   },
   "GoogleDrive": {
+    "api_url_address": "API 地址",
     "chunk_size": "分片大小",
     "chunk_size-tips": "上传分块大小 (单位: MB)",
     "client_id": "客户端ID",
@@ -518,10 +505,9 @@
       "asc": "升序",
       "desc": "降序"
     },
-    "use_online_api": "使用在线 api",
-    "api_url_address": "Api 链接",
     "refresh_token": "刷新令牌",
-    "root_folder_id": "根文件夹ID"
+    "root_folder_id": "根文件夹ID",
+    "use_online_api": "使用在线 API"
   },
   "GooglePhoto": {
     "client_id": "客户端ID",
@@ -583,17 +569,6 @@
       "url": "链接"
     },
     "user_agent": "用户代理"
-  },
-  "Lark": {
-    "app_id": "App ID",
-    "app_id-tips": "App ID",
-    "app_secret": "App Secret\n",
-    "app_secret-tips": "App Secret",
-    "external_mode": "外部预览模式",
-    "external_mode-tips": "打开后复制飞书链接，可跳转到飞书网页预览",
-    "root_folder_path": "根文件夹路径",
-    "tenant_url_prefix": "租户网址前缀",
-    "tenant_url_prefix-tips": "租户地址前缀"
   },
   "LenovoNasShare": {
     "host": "主机地址",
@@ -672,14 +647,13 @@
     "song_limit-tips": "默认只获取 200 首歌曲"
   },
   "Onedrive": {
+    "api_url_address": "API 地址",
     "chunk_size": "分片大小",
     "client_id": "客户端ID",
     "client_secret": "客户端密钥",
     "custom_host": "自定义HOST",
     "custom_host-tips": "自定义加速下载链接",
     "is_sharepoint": "是否Sharepoint",
-    "use_online_api": "使用在线 api",
-    "api_url_address": "Api 链接",
     "redirect_uri": "重定向 Uri",
     "refresh_token": "刷新令牌",
     "region": "地区",
@@ -690,7 +664,8 @@
       "us": "美国版"
     },
     "root_folder_path": "根文件夹路径",
-    "site_id": "站点ID"
+    "site_id": "站点ID",
+    "use_online_api": "使用在线 API"
   },
   "Onedrive Sharelink": {
     "password": "密码",
@@ -773,15 +748,6 @@
     "query_token": "查询令牌",
     "query_token-tips": "不要编辑",
     "refresh_token": "刷新令牌",
-    "root_folder_id": "根文件夹ID"
-  },
-  "Quqi": {
-    "cdn": "CDN",
-    "cdn-tips": "如果您启用此选项，下载速度可以提高，但将会有一些性能损失",
-    "cookie": "Cookie",
-    "cookie-tips": "Cookie 可以同时用于多个客户端",
-    "password": "密码",
-    "phone": "手机号码",
     "root_folder_id": "根文件夹ID"
   },
   "S3": {
@@ -990,8 +956,6 @@
     "client_id": "客户端ID",
     "client_secret": "客户端密钥",
     "client_version": "客户端版本",
-    "credit_key": "信用密钥",
-    "credit_key-tips": "信用密钥，用于登录",
     "device_id": "设备id",
     "download_user_agent": "下载用户代理",
     "login_type": "登录类型",
@@ -1061,23 +1025,6 @@
     "url_structure-tips": "结构:\nFolderName:\n  [FileName:][FileSize:][Modified:]Url",
     "writable": "可写"
   },
-  "VTencent": {
-    "cookie": "Cookie",
-    "order_by": "排序",
-    "order_bys": {
-      "CreatTime": "创建时间",
-      "Name": "名称",
-      "Size": "大小",
-      "UpdateTime": "修改时间"
-    },
-    "order_direction": "排序方式",
-    "order_directions": {
-      "Asc": "升序",
-      "Desc": "降序"
-    },
-    "root_folder_id": "根文件夹ID",
-    "tf_uid": "Tf uid"
-  },
   "Virtual": {
     "max_file_size": "最大文件大小",
     "min_file_size": "最小文件大小",
@@ -1131,6 +1078,7 @@
     }
   },
   "YandexDisk": {
+    "api_url_address": "API 地址",
     "client_id": "客户端ID",
     "client_secret": "客户端密钥",
     "order_by": "排序",
@@ -1148,8 +1096,7 @@
     },
     "refresh_token": "刷新令牌",
     "root_folder_path": "根文件夹路径",
-    "use_online_api": "使用在线 api",
-    "api_url_address": "Api 链接"
+    "use_online_api": "使用在线 API"
   },
   "config": {
     "115 Cloud": {},
@@ -1164,11 +1111,9 @@
       "alert": "如果此驱动无法工作，你可以尝试使用“天翼网盘客户端”驱动。"
     },
     "189CloudPC": {},
-    "AList V2": {},
-    "AList V3": {},
     "Alias": {},
     "Aliyundrive": {
-      "alert": "在这个驱动中可能有一个死循环的错误。\n已废弃，不再维护，并将在未来的版本中删除。\n我们建议使用官方驱动的 阿里云盘Open。"
+      "alert": "在这个驱动中可能有一个死循环的错误。\n已废弃，不再维护，并将在未来的版本中删除。\n我们建议使用官方支持的阿里云盘Open。"
     },
     "AliyundriveOpen": {},
     "AliyundriveShare": {},
@@ -1196,7 +1141,6 @@
     "IPFS API": {},
     "KodBox": {},
     "Lanzou": {},
-    "Lark": {},
     "LenovoNasShare": {},
     "Local": {},
     "MediaTrack": {},
@@ -1214,7 +1158,6 @@
     "PikPakShare": {},
     "Quark": {},
     "QuarkTV": {},
-    "Quqi": {},
     "S3": {},
     "SFTP": {},
     "SMB": {},
@@ -1232,7 +1175,6 @@
     "UCTV": {},
     "USS": {},
     "UrlTree": {},
-    "VTencent": {},
     "Virtual": {},
     "WebDav": {},
     "WeiYun": {},
@@ -1243,18 +1185,16 @@
     "115 Cloud": "115 网盘",
     "115 Open": "115 开放平台",
     "115 Share": "115 云盘分享",
-    "123 Open": "123开放平台",
+    "123 Open": "123 Open",
     "123Pan": "123云盘",
     "123PanLink": "123云盘直链",
     "123PanShare": "123云盘分享",
     "139Yun": "中国移动云盘",
     "189Cloud": "天翼云盘",
     "189CloudPC": "天翼云盘客户端",
-    "AList V2": "AList V2",
-    "AList V3": "AList V3",
     "Alias": "别名",
     "Aliyundrive": "阿里云盘",
-    "AliyundriveOpen": "阿里云盘Open",
+    "AliyundriveOpen": "阿里云盘 (Oauth2)",
     "AliyundriveShare": "阿里云盘分享",
     "Azure Blob Storage": "Azure Blob 存储",
     "BaiduNetdisk": "百度网盘",
@@ -1271,16 +1211,15 @@
     "FTP": "FTP",
     "FebBox": "FebBox",
     "FeijiPan": "飞机盘",
-    "GitHub API": "GitHub API",
+    "GitHub API": "Github API",
     "GitHub Releases": "GitHub 发行",
     "GoogleDrive": "谷歌云盘",
     "GooglePhoto": "谷歌相册",
-    "HalalCloud": "HalalCloud",
+    "HalalCloud": "HhalCloud",
     "ILanZou": "蓝奏云优享版",
     "IPFS API": "IPFS API",
     "KodBox": "可道云",
     "Lanzou": "蓝奏云",
-    "Lark": "Lark (飞书)",
     "LenovoNasShare": "联想家庭储存链接分享",
     "Local": "本机存储",
     "MediaTrack": "分秒帧",
@@ -1288,7 +1227,7 @@
     "Misskey": "Misskey",
     "MoPan": "魔盘",
     "NeteaseMusic": "网易云音乐",
-    "Onedrive": "Onedrive",
+    "Onedrive": "OneDrive",
     "Onedrive Sharelink": "Onedrive 分享链接",
     "OnedriveAPP": "OnedriveAPP",
     "OpenList": "OpenList",
@@ -1296,7 +1235,6 @@
     "PikPakShare": "PikPak分享",
     "Quark": "夸克",
     "QuarkTV": "Quark TV",
-    "Quqi": "曲奇云盘",
     "S3": "对象存储",
     "SFTP": "SFTP",
     "SMB": "SMB",
@@ -1314,7 +1252,6 @@
     "UCTV": "UC TV",
     "USS": "又拍云存储",
     "UrlTree": "地址树",
-    "VTencent": "腾讯智能创作平台",
     "Virtual": "虚拟存储",
     "WebDav": "WebDav",
     "WeiYun": "腾讯微云",

@@ -123,7 +123,7 @@
   "transmission_seedtime": "Transmission种子时间",
   "transmission_uri": "Transmission URI",
   "upload_task_threads_num": "上传任务线程",
-  "version": "版本",
+  "version": "后端版本",
   "video_autoplay": "自动播放视频",
   "video_types": "视频类型",
   "webauthn_login_enabled": "启用Webauthn登录"
