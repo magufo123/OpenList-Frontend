@@ -743,6 +743,30 @@
     },
     "root_folder_id": "根文件夹ID"
   },
+  "QuarkOpen": {
+    "access_token": "Access token",
+    "api_url_address": "Api url address",
+    "app_id": "App id",
+    "app_id-tips": "Keep it empty if you don't have one",
+    "order_by": "Order by",
+    "order_bys": {
+      "created_at": "Created at",
+      "file_name": "File name",
+      "file_type": "File type",
+      "none": "None",
+      "updated_at": "Updated at"
+    },
+    "order_direction": "Order direction",
+    "order_directions": {
+      "asc": "Asc",
+      "desc": "Desc"
+    },
+    "refresh_token": "Refresh token",
+    "root_folder_id": "Root folder id",
+    "sign_key": "Sign key",
+    "sign_key-tips": "Keep it empty if you don't have one",
+    "use_online_api": "Use online api"
+  },
   "QuarkTV": {
     "device_id": "设备id",
     "query_token": "查询令牌",
@@ -1157,6 +1181,7 @@
     "PikPak": {},
     "PikPakShare": {},
     "Quark": {},
+    "QuarkOpen": {},
     "QuarkTV": {},
     "S3": {},
     "SFTP": {},
@@ -1234,6 +1259,7 @@
     "PikPak": "PikPak",
     "PikPakShare": "PikPak分享",
     "Quark": "夸克",
+    "QuarkOpen": "QuarkOpen",
     "QuarkTV": "Quark TV",
     "S3": "对象存储",
     "SFTP": "SFTP",
