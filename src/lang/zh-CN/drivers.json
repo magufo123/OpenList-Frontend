@@ -298,12 +298,6 @@
     "upload_thread": "上传线程",
     "upload_thread-tips": "1<=线程<=32"
   },
-  "BaiduShare": {
-    "BDUSS": "BDUSS",
-    "pwd": "百度网盘分享密码",
-    "root_folder_path": "根文件夹路径",
-    "surl": "百度网盘分享链接"
-  },
   "ChaoXingGroupDrive": {
     "bbsid": "Bbsid",
     "cookie": "Cookie",
@@ -876,6 +870,9 @@
   },
   "ThunderBrowser": {
     "captcha_token": "验证码",
+    "credit_key": "Credit key",
+    "credit_key-tips": "credit key,used for login",
+    "device_id": "Device id",
     "password": "密码",
     "remove_way": "移除方式",
     "remove_ways": {
@@ -884,6 +881,8 @@
     },
     "root_folder_id": "根文件夹ID",
     "safe_password": "安全密码",
+    "use_fluent_play": "Use fluent play",
+    "use_fluent_play-tips": "use fluent play for offline download,only magnet links supported",
     "use_video_url": "使用视频url",
     "username": "用户名"
   },
@@ -896,6 +895,8 @@
     "client_id": "客户端ID",
     "client_secret": "客户端密钥",
     "client_version": "客户端版本",
+    "credit_key": "Credit key",
+    "credit_key-tips": "credit key,used for login",
     "device_id": "设备id",
     "download_user_agent": "下载用户代理",
     "login_type": "登录类型",
@@ -923,6 +924,8 @@
     },
     "timestamp": "时间戳",
     "timestamp-tips": "签名类型是验证码签名,此为必填项",
+    "use_fluent_play": "Use fluent play",
+    "use_fluent_play-tips": "use fluent play for offline download,only magnet links supported",
     "use_video_url": "使用视频url",
     "user_agent": "用户代理",
     "username": "用户名",
@@ -1144,7 +1147,6 @@
     "Azure Blob Storage": {},
     "BaiduNetdisk": {},
     "BaiduPhoto": {},
-    "BaiduShare": {},
     "ChaoXingGroupDrive": {},
     "Cloudreve": {},
     "Cloudreve V4": {},
@@ -1224,7 +1226,6 @@
     "Azure Blob Storage": "Azure Blob 存储",
     "BaiduNetdisk": "百度网盘",
     "BaiduPhoto": "一刻相册",
-    "BaiduShare": "百度分享",
     "ChaoXingGroupDrive": "超星小组盘",
     "Cloudreve": "Cloudreve",
     "Cloudreve V4": "Cloudreve V4",
