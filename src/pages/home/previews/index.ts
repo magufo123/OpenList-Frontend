@@ -114,7 +114,7 @@ const previews: Preview[] = [
     component: lazy(() => import("./plist")),
     prior: true,
   },
-    {
+  {
     name: "HEIC",
     exts: ["heic", "heif", "avif", "vvc", "avc", "jpeg", "jpg"],
     component: lazy(() => import("./heic")),
