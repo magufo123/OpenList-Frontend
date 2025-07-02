@@ -153,6 +153,30 @@
     "username": "用户名",
     "validate_code": "验证码"
   },
+  "189CloudTV": {
+    "access_token": "访问令牌",
+    "family_id": "家庭ID",
+    "order_by": "排序",
+    "order_bys": {
+      "filename": "文件名",
+      "filesize": "文件大小",
+      "lastOpTime": "修改时间"
+    },
+    "order_direction": "排序方式",
+    "order_directions": {
+      "asc": "升序",
+      "desc": "降序"
+    },
+    "rapid_upload": "秒传",
+    "root_folder_id": "根文件夹ID",
+    "type": "类型",
+    "types": {
+      "family": "家庭云",
+      "personal": "个人云"
+    },
+    "upload_thread": "上传线程",
+    "upload_thread-tips": "1<=线程<=32"
+  },
   "Alias": {
     "download_concurrency": "下载并发",
     "download_concurrency-tips": "需要启用代理",
@@ -881,8 +905,8 @@
     },
     "root_folder_id": "根文件夹ID",
     "safe_password": "安全密码",
-    "use_fluent_play": "Use fluent play",
-    "use_fluent_play-tips": "use fluent play for offline download,only magnet links supported",
+    "use_fluent_play": "使用流畅播接口",
+    "use_fluent_play-tips": "使用流畅播接口进行离线下载，只支持磁力链接",
     "use_video_url": "使用视频url",
     "username": "用户名"
   },
@@ -924,8 +948,8 @@
     },
     "timestamp": "时间戳",
     "timestamp-tips": "签名类型是验证码签名,此为必填项",
-    "use_fluent_play": "Use fluent play",
-    "use_fluent_play-tips": "use fluent play for offline download,only magnet links supported",
+    "use_fluent_play": "使用流畅播接口",
+    "use_fluent_play-tips": "使用流畅播接口进行离线下载，只支持磁力链接",
     "use_video_url": "使用视频url",
     "user_agent": "用户代理",
     "username": "用户名",
@@ -1138,6 +1162,7 @@
       "alert": "如果此驱动无法工作，你可以尝试使用“天翼网盘客户端”驱动。"
     },
     "189CloudPC": {},
+    "189CloudTV": {},
     "Alias": {},
     "Aliyundrive": {
       "alert": "在这个驱动中可能有一个死循环的错误。\n已废弃，不再维护，并将在未来的版本中删除。\n我们建议使用官方支持的阿里云盘Open。"
@@ -1219,6 +1244,7 @@
     "139Yun": "中国移动云盘",
     "189Cloud": "天翼云盘",
     "189CloudPC": "天翼云盘客户端",
+    "189CloudTV": "天翼云盘 TV",
     "Alias": "别名",
     "Aliyundrive": "阿里云盘",
     "AliyundriveOpen": "阿里云盘 (Oauth2)",
@@ -1260,7 +1286,7 @@
     "PikPak": "PikPak",
     "PikPakShare": "PikPak分享",
     "Quark": "夸克",
-    "QuarkOpen": "QuarkOpen",
+    "QuarkOpen": "夸克网盘 Open",
     "QuarkTV": "Quark TV",
     "S3": "对象存储",
     "SFTP": "SFTP",
