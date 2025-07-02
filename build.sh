@@ -19,7 +19,7 @@ log_warning() { echo -e "${YELLOW}$1${NC}"; }
 log_step() { echo -e "${PURPLE}$1${NC}"; }
 log_build() { echo -e "${BLUE}$1${NC}"; }
 
-#  Main function to run the build script
+# Main function to run the build script
 main() {
     parse_args "$@"
     set_defaults
@@ -159,7 +159,7 @@ fetch_i18n_from_release() {
     if echo -n "$release_response" | grep -q "Not Found"; then
         log_warning "Failed to fetch release info. Skipping i18n fetch."
     else
-        iextract_i18n_tarball "$release_response"
+        extract_i18n_tarball "$release_response"
     fi
 }
 
