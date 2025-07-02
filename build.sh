@@ -159,7 +159,7 @@ fetch_i18n_from_release() {
     if echo -n "$release_response" | grep -q "Not Found"; then
         log_warning "Failed to fetch release info. Skipping i18n fetch."
     else
-        iextract_i18n_tarball "$release_response"
+        extract_i18n_tarball "$release_response"
     fi
 }
 
