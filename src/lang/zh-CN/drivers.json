@@ -345,7 +345,7 @@
     "enable_folder_size": "启用文件夹大小",
     "enable_thumb": "启用缩略图",
     "enable_version_upload": "启用版本上传",
-    "hide_uploading": "Hide uploading",
+    "hide_uploading": "隐藏正在上传中的文件",
     "order_by": "排序",
     "order_bys": {
       "created_at": "创建时间",
@@ -748,7 +748,7 @@
   },
   "Quark": {
     "cookie": "Cookie",
-    "only_list_video_file": "Only list video file",
+    "only_list_video_file": "仅列出视频文件",
     "order_by": "排序",
     "order_bys": {
       "file_name": "文件名称",
@@ -762,8 +762,8 @@
       "desc": "降序"
     },
     "root_folder_id": "根文件夹ID",
-    "use_transcoding_address": "Use transcoding address",
-    "use_transcoding_address-tips": "You can watch the transcoded video and support 302 redirection"
+    "use_transcoding_address": "使用转码地址",
+    "use_transcoding_address-tips": "您可以观看经过转码的视频，并支持302重定向"
   },
   "QuarkOpen": {
     "access_token": "访问令牌",
@@ -845,13 +845,13 @@
     "username": "用户名"
   },
   "Strm": {
-    "filterFileTypes": "FilterFileTypes",
-    "filterFileTypes-tips": "Supports suffix name of strm file",
-    "paths": "Paths",
-    "protect_same_name": "Protect same name",
-    "protect_same_name-tips": "Protects same-name files from Delete or Rename",
-    "siteUrl": "SiteUrl",
-    "siteUrl-tips": "The prefix URL of the strm file"
+    "encodePath": "编码路径",
+    "encodePath-tips": "在 Strm 文件中编码路径",
+    "filterFileTypes": "过滤文件类型",
+    "filterFileTypes-tips": "支持 Strm 文件的后缀名",
+    "paths": "路径",
+    "siteUrl": "站点 URL",
+    "siteUrl-tips": "Strm 文件的前缀 URL"
   },
   "Teambition": {
     "cookie": "Cookie",
@@ -1045,14 +1045,9 @@
     "username": "用户名",
     "username-tips": "登录类型是用户名,此为必填项"
   },
-  "Trainbit": {
-    "AUSHELLPORTAL": "AUSHELLPORTAL",
-    "apikey": "Apikey",
-    "root_folder_id": "根文件夹ID"
-  },
   "UC": {
     "cookie": "Cookie",
-    "only_list_video_file": "Only list video file",
+    "only_list_video_file": "仅列出视频文件",
     "order_by": "排序",
     "order_bys": {
       "file_name": "文件名称",
@@ -1066,8 +1061,8 @@
       "desc": "降序"
     },
     "root_folder_id": "根文件夹ID",
-    "use_transcoding_address": "Use transcoding address",
-    "use_transcoding_address-tips": "You can watch the transcoded video and support 302 redirection"
+    "use_transcoding_address": "使用转码地址",
+    "use_transcoding_address-tips": "您可以观看经过转码的视频，并支持302重定向"
   },
   "UCTV": {
     "device_id": "设备id",
@@ -1239,7 +1234,6 @@
     "ThunderExpert": {},
     "ThunderX": {},
     "ThunderXExpert": {},
-    "Trainbit": {},
     "UC": {},
     "UCTV": {},
     "USS": {},
@@ -1318,7 +1312,6 @@
     "ThunderExpert": "迅雷专家版",
     "ThunderX": "迅雷X",
     "ThunderXExpert": "迅雷X专家版",
-    "Trainbit": "Trainbit",
     "UC": "UC",
     "UCTV": "UC TV",
     "USS": "又拍云存储",
