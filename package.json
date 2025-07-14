@@ -6,7 +6,7 @@
     "url": "https://long2025.top"
   },
   "description": "A new AList Fork to Anti Trust Crisis",
-  "packageManager": "pnpm@9.9.0",
+  "packageManager": "pnpm@9.15.9",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lyy2005a3/OpenList-Frontend.git"
