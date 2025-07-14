@@ -70,7 +70,12 @@ export const players: {
     scheme: "iplay://play/any?type=url&url=$bdurl",
     platforms: ["iOS"],
   },
-  { icon: "mpv", name: "mpv", scheme: "mpv://$edurl", platforms: ["Windows", "MacOS", "Linux", "Android"] },
+  {
+    icon: "mpv",
+    name: "mpv",
+    scheme: "mpv://$edurl",
+    platforms: ["Windows", "MacOS", "Linux", "Android"],
+  },
 ]
 
 export const AutoHeightPlugin = (player: Artplayer) => {
@@ -120,7 +125,7 @@ export const VideoBox = (props: {
     }
     return players.filter((p) => p.platforms.includes(platform))
   })
-  
+
   return (
     <VStack w="$full" spacing="$2">
       {props.children}
@@ -150,7 +155,7 @@ export const VideoBox = (props: {
       </HStack>
       <HStack>
         <Flex wrap="wrap" gap="$1" justifyContent="center" alignItems="center">
-        <For each={platformPlayers()}>
+          <For each={platformPlayers()}>
             {(item) => {
               return (
                 <Tooltip placement="top" withArrow label={item.name}>
@@ -173,23 +178,26 @@ export const VideoBox = (props: {
             }}
           </For>
           <IconButton
-          aria-label="Show all players"
-          variant="ghost"
-          onClick={() => {
-            const newShowAll = !showAll()
-            setShowAll(newShowAll)
-            localStorage.setItem("video_show_all_players", newShowAll.toString())
-          }}
-          icon={
-            <Icon
-              as={BsArrowRight}
-              boxSize="$6"
-              color="accent.500"
-              transform={showAll() ? "rotate(180deg)" : "none"}
-              transition="transform 0.2s"
-            />
-          }
-        />
+            aria-label="Show all players"
+            variant="ghost"
+            onClick={() => {
+              const newShowAll = !showAll()
+              setShowAll(newShowAll)
+              localStorage.setItem(
+                "video_show_all_players",
+                newShowAll.toString(),
+              )
+            }}
+            icon={
+              <Icon
+                as={BsArrowRight}
+                boxSize="$6"
+                color="accent.500"
+                transform={showAll() ? "rotate(180deg)" : "none"}
+                transition="transform 0.2s"
+              />
+            }
+          />
         </Flex>
       </HStack>
     </VStack>
