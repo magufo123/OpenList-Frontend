@@ -64,7 +64,7 @@ display_help() {
     echo "  --no-compress Skip compression"
     echo "  --enforce-tag Force git tag requirement for both dev and release builds"
     echo "  --skip-i18n   Skip i18n build step"
-    echo "  --lite        Add -lite suffix to frontend archive name"
+    echo "  --lite        Build lite version"
     echo ""
     echo "Environment variables:"
     echo "  OPENLIST_FRONTEND_BUILD_MODE=dev|release (default: dev)"
@@ -149,13 +149,17 @@ build_project() {
     fi
 
     log_step "==== Building project ===="
-    pnpm build
+    if [[ "$LITE_FLAG" == "true" ]]; then
+        pnpm build:lite
+    else
+        pnpm build
+    fi
 }
 
 # Fetch i18n files from release if skip-i18n flag is set
 fetch_i18n_from_release() {
     log_warning "Skipping i18n build step, try to fetch from GitHub release"
-    release_response=$(curl -s "https://api.github.com/repos/lyy2005a3/OpenList-Frontend/releases/tags/$git_version")
+    release_response=$(curl -s "https://api.github.com/repos/magufo123/OpenList-Frontend/releases/tags/$git_version")
     if echo -n "$release_response" | grep -q "Not Found"; then
         log_warning "Failed to fetch release info. Skipping i18n fetch."
     else
