@@ -17,9 +17,9 @@ import {
 } from "solid-icons/bs"
 import { FiLogIn } from "solid-icons/fi"
 import { SiMetabase } from "solid-icons/si"
-import { CgDatabase } from "solid-icons/cg"
+import { CgDatabase, CgShare } from "solid-icons/cg"
 import { OcWorkflow2 } from "solid-icons/oc"
-import { IoCopy, IoHome, IoMagnetOutline } from "solid-icons/io"
+import { IoCopy, IoMove, IoHome, IoMagnetOutline } from "solid-icons/io"
 import { Component, lazy } from "solid-js"
 import { Group, UserRole } from "~/types"
 import { FaSolidBook, FaSolidDatabase } from "solid-icons/fa"
@@ -147,6 +147,13 @@ export const side_menu_items: SideMenuItem[] = [
         component: lazy(() => import("./tasks/Copy")),
       },
       {
+        title: "manage.sidemenu.move",
+        icon: IoMove,
+        to: "/LONGYun2025/tasks/move",
+        role: UserRole.GENERAL,
+        component: lazy(() => import("./tasks/Move")),
+      },
+      {
         title: "manage.sidemenu.decompress",
         icon: TbArchive,
         to: "/LONGYun2025/tasks/decompress",
@@ -166,6 +173,13 @@ export const side_menu_items: SideMenuItem[] = [
     icon: CgDatabase,
     to: "/LONGYun2025/storages",
     component: lazy(() => import("./storages/Storages")),
+  },
+  {
+    title: "manage.sidemenu.shares",
+    icon: CgShare,
+    to: "/LONGYun2025/shares",
+    role: UserRole.GENERAL,
+    component: lazy(() => import("./shares/Shares")),
   },
   {
     title: "manage.sidemenu.metas",
